@@ -3,7 +3,7 @@ OMERO.tagsearch
 OMERO.tagsearch is a plugin for `OMERO.web <https://github.com/ome/omero-web>`_ that enables searching of data using tags, with the search continuously refined as available search terms are entered and further term suggestions based on the entered terms are offered. 
 This can be used in a way that is similar to navigating a file system hierarchy.
 
-This was formerly part of [OMERO.webtagging](https://github.com/German-BioImaging/webtagging), the umbrella name for tools developed to enhance use of text annotations (tags) in OMERO.
+This was formerly part of `OMERO.webtagging <https://github.com/German-BioImaging/webtagging>`_, the umbrella name for tools developed to enhance use of text annotations (tags) in OMERO.
 
 Requirements
 ============
