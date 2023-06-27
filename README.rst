@@ -1,3 +1,27 @@
+OMERO.tagsearch
+================
+OMERO.tagsearch is a plugin for `OMERO.web <https://github.com/ome/omero-web>`_ that enables searching of data using tags, with the search continuously refined as available search terms are entered and further term suggestions based on the entered terms are offered. 
+This can be used in a way that is similar to navigating a file system hierarchy.
+
+This was formerly part of [OMERO.webtagging](https://github.com/German-BioImaging/webtagging), the umbrella name for tools developed to enhance use of text annotations (tags) in OMERO.
+
+Requirements
+============
+
+As Python 2 has now reached end-of-life, OMERO 5.6 now
+requires Python 3. With release 3.1.0 of tagsearch, the following are now required. To use tagsearch on older OMERO systems (running Python 2),
+please use versions older than 3.1.0.
+
+* Python 3.5 or later
+* omero-web 5.6 or later
+* django 1.11 or later
+
+User Documentation
+==================
+
+http://help.openmicroscopy.org/web-tagging.html
+
+
 Installation
 ============
 
@@ -36,3 +60,32 @@ To install using pip in development mode (in appropriate virtualenv)
 
 OMERO development server can then be started in the usual way. Remember to
 configure the tagsearch settings the same as above.
+
+Project Maintenance
+===================
+
+I (Douglas) am no longer actively developing
+OMERO.webtagging. I am thrilled to hand over
+maintainence and development to
+`German Bioimaging <https://gerbi-gmb.de/i3dbio/i3dbio-about/>`_.
+
+Acknowledgements
+================
+
+OMERO.webtagging was created by Douglas P. W. Russell
+(dpwrussell@gmail.com) while at Oxford University and
+Harvard Medical School, then later extended by DPWR
+Consulting Ltd.
+
+These plugins were developed originally with the
+support of [Micron Advanced Bioimaging Unit](https://micronoxford.com/)
+funded by the Wellcome Trust Strategic Award 091911,
+and [Open Microscopy](https://www.openmicroscopy.org/).
+
+Continued development was supported by [The Laboratory
+of Systems Pharmacology, Harvard Medical School](https://hits.harvard.edu/the-program/laboratory-of-systems-pharmacology/research-program/) and
+[Research Computing, Harvard Medical School](https://it.hms.harvard.edu/our-services/research-computing).
+
+Continued development was sponsored by
+[Micron Advanced Bioimaging Unit](https://micronoxford.com/)
+funded by the Wellcome Trust Strategic Award 107457.
