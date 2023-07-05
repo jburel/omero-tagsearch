@@ -40,7 +40,7 @@ to install it manually as described `here <https://www.openmicroscopy.org/site/s
   omero config append omero.web.ui.top_links '["Tag Search", "tagsearch"]'
 
 Upgrade from omero-webtagging-tagsearch to omero-tagsearch
-============
+==========================================================
 
 Since 3.2.2, the package was renamed to `omero-tagsearch`. This is a breaking change for OMERO.web, as the old package must be removed from the OMERO.web config and replaced by the new package.
 
