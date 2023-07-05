@@ -39,6 +39,33 @@ to install it manually as described `here <https://www.openmicroscopy.org/site/s
   # Add a top-link to tagsearch designer
   omero config append omero.web.ui.top_links '["Tag Search", "tagsearch"]'
 
+Upgrade from omero-webtagging-tagsearch to omero-tagsearch
+============
+
+Since 3.2.2, the package was renamed to `omero-tagsearch`. This is a breaking change for OMERO.web, as the old package must be removed from the OMERO.web config and replaced by the new package.
+
+You can perform the upgrade as follow:
+
+::
+
+  # Install the new package and uninstall the old one
+  pip install omero-tagsearch
+  pip uninstall omero-webtagging-tagsearch
+
+  # Then open the OMERO.web configuration editor
+  omero config edit
+  # Update the configuration called 'omero.web.apps'
+  # In 'omero.web.apps': 'omero_webtagging_tagsearch' -> 'omero_tagsearch'
+
+Note that installing the latest `omero-webtagging-autotag` is not functional but has a dependency on `omero-autotag`. 
+Thus, if you wish to use the old version `omero-webtagging-tagsearch`, make sure to specify the latest working version:
+
+::
+
+  # ONLY IF YOU WANT TO USE AN OLDER VERSION OF THE PLUGIN
+  pip install omero-webtagging-tagsearch==3.2.0
+  # And set the configuration accordingly
+
 
 Documentation
 =============
