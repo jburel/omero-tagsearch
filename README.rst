@@ -47,15 +47,16 @@ Since 3.2.2, the package was renamed to `omero-tagsearch`. This is a breaking ch
 You can perform the upgrade as follow:
 
 ::
-
+  # stop omero web
   # Install the new package and uninstall the old one
+  pip uninstall omero-webtagging-tagsearch  
   pip install omero-tagsearch
-  pip uninstall omero-webtagging-tagsearch
 
   # Then open the OMERO.web configuration editor
   omero config edit
   # Update the configuration called 'omero.web.apps'
   # In 'omero.web.apps': 'omero_webtagging_tagsearch' -> 'omero_tagsearch'
+  # start omero web
 
 Note that installing the latest `omero-webtagging-autotag` is not functional but has a dependency on `omero-autotag`. 
 Thus, if you wish to use the old version `omero-webtagging-tagsearch`, make sure to specify the latest working version:
@@ -63,8 +64,10 @@ Thus, if you wish to use the old version `omero-webtagging-tagsearch`, make sure
 ::
 
   # ONLY IF YOU WANT TO USE AN OLDER VERSION OF THE PLUGIN
+  # stop omero web
   pip install omero-webtagging-tagsearch==3.2.0
   # And set the configuration accordingly
+  # start omero web
 
 
 Documentation
