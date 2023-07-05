@@ -34,7 +34,7 @@ to install it manually as described `here <https://www.openmicroscopy.org/site/s
   pip install omero-webtagging-tagsearch
 
   # Add tagsearch to webclient
-  omero config append omero.web.apps '"omero_webtagging_tagsearch"'
+  omero config append omero.web.apps '"omero_tagsearch"'
 
   # Add a top-link to tagsearch designer
   omero config append omero.web.ui.top_links '["Tag Search", "tagsearch"]'
