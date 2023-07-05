@@ -47,6 +47,7 @@ Since 3.2.2, the package was renamed to `omero-tagsearch`. This is a breaking ch
 You can perform the upgrade as follow:
 
 ::
+
   # stop omero web
   # Install the new package and uninstall the old one
   pip uninstall omero-webtagging-tagsearch  
