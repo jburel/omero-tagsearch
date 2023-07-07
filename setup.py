@@ -61,7 +61,6 @@ setup(
     keywords=["OMERO.web", "webtagging", "tagsearch"],
     install_requires=REQUIREMENTS,
     python_requires="~=3.5",
-    obsoletes=['omero_webtagging_tagsearch'],
     include_package_data=True,
     zip_safe=False,
 )
